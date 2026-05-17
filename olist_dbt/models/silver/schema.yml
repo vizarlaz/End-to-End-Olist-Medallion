@@ -1,0 +1,19 @@
+version: 2
+
+models:
+
+  - name: silver_sales_clean
+
+    columns:
+
+      - name: order_id
+        tests:
+          - not_null
+
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: total_order_value
+        tests:
+          - not_null

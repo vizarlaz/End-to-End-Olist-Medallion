@@ -1,0 +1,31 @@
+version: 2
+
+models:
+
+  - name: gold_daily_sales
+    description: Daily sales KPI table
+
+    columns:
+
+      - name: sales_date
+        tests:
+          - not_null
+
+      - name: revenue
+        tests:
+          - not_null
+
+  - name: gold_monthly_revenue
+    description: Monthly revenue aggregation
+
+  - name: gold_top_products
+    description: Product performance metrics
+
+  - name: gold_payment_performance
+    description: Payment analytics
+
+  - name: gold_customer_lifetime_value
+    description: Customer lifetime value metrics
+
+  - name: gold_customer_retention
+    description: Monthly customer retention metrics
